@@ -21,6 +21,11 @@ public class notas {
         return notaIMDB;
     }
 
+    public double[] getNotas(){
+        double[] notas = {notaG, notaA, notaIMDB};
+        return notas;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -32,10 +37,6 @@ public class notas {
     }
     @Override
     public String toString() {
-        return "notas{" +
-                "notaG=" + notaG +
-                ", notaA=" + notaA +
-                ", notaIMDB=" + notaIMDB +
-                '}';
+        return " "+notaG+"         |"+notaA+"          | "+notaIMDB+"       |";
     }
 }
